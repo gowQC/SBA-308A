@@ -1,0 +1,76 @@
+//used to manage pokemon with names from API that include specific genders, forms, or unwanted hyphens
+export const nameConversion = {
+  "Nidoran-f": "Nidoran ♀",
+  "Nidoran-m": "Nidoran ♂",
+  "Mr-mime": "Mr. Mime",
+  "Deoxys-normal": "Deoxys",
+  "Wormadam-plant": "Wormadam",
+  "Mime-jr": "Mime Jr.",
+  "Porygon-z": "Porygon-Z",
+  "Giratina-altered": "Giratina",
+  "Shaymin-land": "Shaymin",
+  "Basculin-red-striped": "Basculin",
+  "Darmanitan-standard": "Darmanitan",
+  "Tornadus-incarnate": "Tornadus",
+  "Thundurus-incarnate": "Thundurus",
+  "Landorus-incarnate": "Landorus",
+  "Keldeo-ordinary": "Keldeo",
+  "Meloetta-aria": "Meloetta",
+  "Meowstic-male": "Meowstic",
+  "Aegislash-shield": "Aegislash",
+  "Pumpkaboo-average": "Pumpkaboo",
+  "Gourgeist-average": "Gourgeist",
+  "Zygarde-50": "Zygarde",
+  "Oricorio-baile": "Oricorio",
+  "Lycanroc-midday": "Lycanroc",
+  "Wishiwashi-solo": "Wishiwashi",
+  "Minior-red-meteor": "Minior",
+  "Mimikyu-disguised": "Mimikyu",
+  "Tapu-koko": "Tapu Koko",
+  "Tapu-lele": "Tapu Lele",
+  "Tapu-bulu": "Tapu Bulu",
+  "Tapu-fini": "Tapu Fini",
+  "Toxtricity-amped": "Toxtricity",
+  "Mr-rime": "Mr. Rime",
+  "Eiscue-ice": "Eiscue",
+  "Indeedee-male": "Indeedee",
+  "Morpeko-full-belly": "Morpeko",
+  "Urshifu-single-strike": "Urshifu",
+  "Basculegion-male": "Basculegion",
+  "Enamorus-incarnate": "Enamorus",
+  "Great-tusk": "Great Tusk",
+  "Scream-tail": "Scream Tail",
+  "Brute-bonnet": "Brute Bonnet",
+  "Flutter-mane": "Flutter Mane",
+  "Slither-wing": "Slither Wing",
+  "Sandy-shocks": "Sandy Shocks",
+  "Iron-treads": "Iron Treads",
+  "Iron-bundle": "Iron Bundle",
+  "Iron-hands": "Iron Hands",
+  "Iron-jugulis": "Iron Jugulis",
+  "Iron-moth": "Iron Moth",
+  "Iron-thorns": "Iron Thorns",
+  "Wo-chien": "Wo-Chien",
+  "Chien-pao": "Chien-Pao",
+  "Ting-lu": "Ting-Lu",
+  "Chi-yu": "Chi-Yu",
+  "Roaring-moon": "Roaring Moon",
+  "Iron-valiant": "Iron Valiant",
+  "Walking-wake": "Walking Wake",
+  "Iron-leaves": "Iron Leaves",
+  "Gouging-fire": "Gouging Fire",
+  "Raging-bolt": "Raging Bolt",
+  "Iron-boulder": "Iron Boulder",
+  "Iron-crown": "Iron Crown",
+};
+
+// takes name, capitalizes first letter, then checks with conversion object
+export function filter(nameConversion, name) {
+  let capName = name.charAt(0).toUpperCase() + name.slice(1);
+  for (let key in nameConversion) {
+    if (key === capName) {
+      return nameConversion[key];
+    }
+  }
+  return capName;
+}
