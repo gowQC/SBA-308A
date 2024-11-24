@@ -1,0 +1,16 @@
+body {
+  background-color: rgb(43, 40, 40);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0px;
+}
+
+body > * {
+  margin: 30px auto;
+}
+
+select {
+  width: 400px;
+}
