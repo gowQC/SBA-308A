@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(43, 40, 40);
+  background-color: rgb(71, 66, 66);
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -13,4 +13,66 @@ body > * {
 
 select {
   width: 400px;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.pokeImgContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+img {
+  width: 250px;
+  height: 250px;
+}
+
+ul {
+  list-style-type: none;
+  justify-content: left;
+}
+
+li {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  margin: 10px auto;
+}
+
+li > div {
+  margin-left: 10px;
+  height: 15px;
+}
+
+.green {
+  border: 1px solid green;
+  background-color: green;
+}
+
+.red {
+  border: 1px solid red;
+  background-color: red;
+}
+
+.orange {
+  border: 1px solid orange;
+  background-color: orange;
+}
+
+.blue {
+  border: 1px solid blue;
+  background-color: blue;
+}
+
+.yellow {
+  border: 1px solid yellow;
+  background-color: yellow;
+}
+
+.pink {
+  border: 1px solid pink;
+  background-color: pink;
 }
